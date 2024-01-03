@@ -41,6 +41,9 @@ namespace Inheritance
             }
             //In this case, because "Eat" is overwriten, every time that we call the method it doesn't matter
             //that the array is of "Mascot", we call the method from the subclass.
+
+
+
         }
     }
 }
