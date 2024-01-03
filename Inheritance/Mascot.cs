@@ -1,6 +1,6 @@
 ﻿namespace Inheritance
 {
-    class Mascot 
+    class Mascot : Animal
     {
         private string? name;
         private string? color;
@@ -16,11 +16,9 @@
             this.humanYears = humanYears;
         }
 
-        public void Think() => Console.WriteLine("Hmmm, I'm thinking about stuff...");
-     
-        public virtual void Eat() => Console.WriteLine("Finally some food...");
-        //Using the "virtual" keyword means that every subclass should modify this method.
-        //Not the same as the "new" keyword, that one is used when we write a new method in the
-        //subclass that just so happens to have the same signature as one in the upperclass.
+        public override string GetName()
+        {
+            return $"I'm a mascot and my name is: {name}.";
+        }
     }
 }

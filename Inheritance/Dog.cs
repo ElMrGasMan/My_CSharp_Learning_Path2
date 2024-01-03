@@ -1,6 +1,6 @@
 ﻿namespace Inheritance
 {
-    class Dog : Mascot
+    sealed class Dog : Mascot
     {
         private string? breed;
         public string? Breed { get => breed; set => breed = value; }
