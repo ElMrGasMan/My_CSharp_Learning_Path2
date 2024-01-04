@@ -5,7 +5,9 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{7826FEF7-FFB1-4E12-8DB3-3C9B6BD1EDC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{D44BAF6A-3855-4CC2-99C7-9D0D1DB2A524}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{D44BAF6A-3855-4CC2-99C7-9D0D1DB2A524}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Properties\Properties.csproj", "{A9982ABD-E79C-4DDC-A89F-FC473A2CCFDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D44BAF6A-3855-4CC2-99C7-9D0D1DB2A524}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D44BAF6A-3855-4CC2-99C7-9D0D1DB2A524}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D44BAF6A-3855-4CC2-99C7-9D0D1DB2A524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9982ABD-E79C-4DDC-A89F-FC473A2CCFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9982ABD-E79C-4DDC-A89F-FC473A2CCFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9982ABD-E79C-4DDC-A89F-FC473A2CCFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9982ABD-E79C-4DDC-A89F-FC473A2CCFDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
