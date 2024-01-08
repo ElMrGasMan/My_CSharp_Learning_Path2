@@ -7,7 +7,7 @@
 
     enum Voltage 
     {
-        Low = 20, Medium = 30, High = 50, VeryHigh = 90;
+        Low = 20, Medium = 30, High = 50, VeryHigh = 90
     }
 
     internal class Program
@@ -45,11 +45,22 @@
             coordinate2S.X = 15;
             Console.WriteLine("Changed X: " + coordinate1S.X);
 
+            Console.WriteLine("===Enums===");
+
             Seasons bestSeason = Seasons.Fall; //We get the name of the value
             Console.WriteLine("The best season is: " + bestSeason);
 
-            int seasonNumber = (int)Seasons.Fall; //Casting is necessary to get the value
+            int seasonNumber = (int)Seasons.Winter;
+            int voltajeNumber = (int)Voltage.Medium; //Casting is necessary to get the value
             string seasonString = Seasons.Winter.ToString(); //ToString method necessary to store as a string
+
+            Console.WriteLine($"{seasonString} is the season number {seasonNumber+1}.");
+            Console.WriteLine($"The voltaje amount is: {voltajeNumber}.");
+
+            Console.WriteLine("===Finalizers===");
+            Destructor destructorExample = new();
+            destructorExample.PrintFile();
+
         }
     }
 }
