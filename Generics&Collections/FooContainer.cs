@@ -1,4 +1,7 @@
-﻿namespace Generics_Collections
+﻿using System.Collections.Generic;
+
+
+namespace Generics_Collections
 {
     internal class FooContainer<T> where T : Foo
     {
