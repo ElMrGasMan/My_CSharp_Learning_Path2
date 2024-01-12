@@ -25,13 +25,31 @@ namespace DelegatesPredicatesLambdas
             Console.WriteLine("===Predicates===");
 
             List<int> ints = [2, 9, 18, 994, 1330];
-
             Predicate<int> predicatePrime = IsPrime;
-
             List<int> primeInts = ints.FindAll(predicatePrime);
 
             if (primeInts.Count > 0) Console.WriteLine("There are prime numbers in the list!");
             else Console.WriteLine("The list has no prime numbers to speak of.");
+
+            Console.WriteLine("===Lambdas===");
+            //Body: parameters => statement block
+            //----- (param1, param2, ..., paramN) => statement block
+
+            IEnumerable<int> evenInts = ints.Where(num => num % 2 == 0);
+
+            foreach (int item in evenInts)
+            {
+                Console.WriteLine(item);
+            }
+
+            //Another way to iterate through a List is using it's own "foreach" method.
+            //primeInts.ForEach(num => Console.WriteLine(num + "."));
+
+            //Using delegates and lambdas together:
+
+            messages = new(s => Console.WriteLine("This is your last chance " + s + "."));
+            messages("John");
+
         }
 
         private static bool IsPrime(int num) 
