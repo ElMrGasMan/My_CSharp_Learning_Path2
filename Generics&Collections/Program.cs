@@ -25,13 +25,12 @@ namespace Generics_Collections
 
             Console.WriteLine("===Collections===");
 
+            Console.WriteLine("---Mono Value Collections---");
             List<int> ints = [];
             //LISTS are mostly used when elements are accessed many times, but otherwise is slow when
             //deleting or adding elements since they are all adyacent to each other.
 
-            ints.Add(780);
-            ints.Add(180);
-            ints.Add(99);
+            ints.AddRange(new int[] { 780, 180, 99 });
 
             int[] arrInts1 = [5, 78, 100, 20000, 1];
             LinkedList<int> ints2 = new(arrInts1);
@@ -40,10 +39,23 @@ namespace Generics_Collections
 
             IEnumerable<int> enumerable = ints2.Reverse();
 
-            foreach (int item in ints2)
+            foreach (int item in enumerable)
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine("---Dictionaries (Key, Value pairs)---");
+
+            Dictionary<string, int> prices = [];
+
+            prices.Add("Mayonnaise", 20); //Either of these two ways to add elements is ok.
+            prices["Chesse"] = 550;
+
+            foreach (KeyValuePair<string, int> item in prices) //Instead of KeyValuePair, "var" can also be used
+            {
+                Console.WriteLine($"Product: {item.Key}. Price: ${item.Value}.");
+            }
+
         }
     }
 }
