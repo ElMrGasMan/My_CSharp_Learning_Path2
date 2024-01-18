@@ -36,9 +36,8 @@ namespace RegularExpressions
             string pattern = @"\(\d{3}\)\s*?\d{3}-\d{4}";
 
             Regex regex = new(pattern);
-            Match match = regex.Match(text);
 
-            return match.ToString();
+            return regex.Match(text).ToString();
         }
     }
 }
